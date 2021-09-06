@@ -1,0 +1,33 @@
+.navbar {
+  @include color (#f0ce54);
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+}
+
+.navbar .menu {
+  grid-column: 4 / 7;
+  display: flex;
+  padding: 20px 20px;
+}
+.navbar ul li {
+  margin-right: 3em;
+  list-style: none;
+}
+.navbar ul li a {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(17, 16, 16);
+  cursor: pointer;
+}
+.navbar ul li a:hover {
+  color: #fff;
+}
+.navbar .menu-bar {
+  display: none;
+}
+.navbar .shop {
+  grid-column: 8 / 9;
+  justify-content: flex-end;
+}
